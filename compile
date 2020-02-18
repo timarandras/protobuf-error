@@ -1,0 +1,5 @@
+#/bin/bash
+mkdir -p generated/cpp
+mkdir -p generated/js
+
+protoc --cpp_out=generated/cpp --js_out=import_style=commonjs_strict,binary:generated/js *.proto
